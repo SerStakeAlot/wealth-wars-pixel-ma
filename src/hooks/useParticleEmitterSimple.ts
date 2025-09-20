@@ -7,7 +7,7 @@ interface ParticleProps {
   type: 'credit' | 'wealth'
 }
 
-export function useParticleEmitter() {
+export function useParticleEmitterSimple() {
   const [particles, setParticles] = useState<ParticleProps[]>([])
   
   const emit = (x: number, y: number, type: 'credit' | 'wealth' = 'credit', count: number = 3) => {
