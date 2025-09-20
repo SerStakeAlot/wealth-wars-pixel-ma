@@ -1,0 +1,59 @@
+/* Wealth Wars Pixel Game Styles */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+/* Pixel-specific styles */
+.pixel-button {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  box-shadow: 
+    inset 1px 1px 0 rgba(255,255,255,0.2),
+    inset -1px -1px 0 rgba(0,0,0,0.3);
+}
+
+.pixel-button:active {
+  box-shadow: 
+    inset 1px 1px 0 rgba(0,0,0,0.3),
+    inset -1px -1px 0 rgba(255,255,255,0.1);
+}
+
+/* Game theme variables */
+:root {
+  /* Pixel Game Theme - Deep Space Navy with Strategic Gold */
+  --ww-background: oklch(0.09 0.02 240);
+  --ww-foreground: oklch(0.9 0 0);
+  --ww-card: oklch(0.12 0.02 240);
+  --ww-card-foreground: oklch(0.9 0 0);
+  --ww-primary: oklch(0.15 0.05 240);
+  --ww-primary-foreground: oklch(1 0 0);
+  --ww-secondary: oklch(0.45 0.08 220);
+  --ww-secondary-foreground: oklch(1 0 0);
+  --ww-muted: oklch(0.2 0.02 240);
+  --ww-muted-foreground: oklch(0.7 0 0);
+  --ww-accent: oklch(0.78 0.12 85);
+  --ww-accent-foreground: oklch(0.1 0 0);
+  --ww-destructive: oklch(0.577 0.245 27.325);
+  --ww-destructive-foreground: oklch(1 0 0);
+  --ww-border: oklch(0.3 0.02 240);
+  --ww-input: oklch(0.3 0.02 240);
+  --ww-ring: oklch(0.78 0.12 85);
+  --ww-radius: 0.25rem;
+}
+
+/* Custom scrollbars for game area */
+.wealth-wars-container ::-webkit-scrollbar {
+  width: 8px;
+}
+
+.wealth-wars-container ::-webkit-scrollbar-track {
+  background: oklch(0.2 0.02 240);
+}
+
+.wealth-wars-container ::-webkit-scrollbar-thumb {
+  background: oklch(0.4 0.04 220);
+  border-radius: 4px;
+}
+
+.wealth-wars-container ::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.5 0.06 200);
+}

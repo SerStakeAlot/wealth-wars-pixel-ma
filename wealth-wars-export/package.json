@@ -1,0 +1,33 @@
+{
+  "name": "wealth-wars-pixel-game",
+  "version": "1.0.0",
+  "description": "Pixel strategy idle economy game - Wealth Wars",
+  "main": "WealthWarsApp.tsx",
+  "keywords": ["react", "game", "pixel-art", "strategy", "idle"],
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "typescript": "^5.0.0",
+    "framer-motion": "^10.0.0",
+    "@phosphor-icons/react": "^2.0.0",
+    "sonner": "^1.0.0",
+    "tailwindcss": "^3.0.0"
+  },
+  "peerDependencies": {
+    "@github/spark": "^1.0.0"
+  },
+  "files": [
+    "components/",
+    "hooks/",
+    "lib/",
+    "WealthWarsApp.tsx",
+    "wealth-wars.css",
+    "README.md",
+    "integration-example.tsx"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/wealth-wars-game"
+  },
+  "license": "MIT"
+}
